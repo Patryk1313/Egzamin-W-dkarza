@@ -1,19 +1,13 @@
 const sidebar = document.getElementById("sidebar");
-const menuToggle = document.getElementById("menuToggle");
 const searchInput = document.getElementById("searchInput");
 const sections = Array.from(document.querySelectorAll(".lesson"));
 const navLinks = Array.from(document.querySelectorAll(".sidebar nav a"));
 const progressFill = document.getElementById("progressFill");
 const resultInfo = document.getElementById("resultInfo");
 
-menuToggle.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-});
-
 document.addEventListener("click", (event) => {
   const clickedInsideSidebar = sidebar.contains(event.target);
-  const clickedToggle = menuToggle.contains(event.target);
-  if (!clickedInsideSidebar && !clickedToggle && window.innerWidth <= 1080) {
+  if (!clickedInsideSidebar && window.innerWidth <= 1080) {
     sidebar.classList.remove("open");
   }
 });

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Egzamin Wędkarza – nauka RAPR PZW Okr. Poznan. Sekcje §1–§7, tabele wymiarów, okresów ochronnych i limitów.">
+  <title>Egzamin Wędkarza – RAPR PZW Poznan</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuToggle" class="menu-toggle" aria-label="Otworz menu">MENU</button>
+    <a href="#start" class="topbar-logo">
+      <img src="logo.svg" alt="Logo PZW Poznan" class="topbar-logo-img">
+    </a>
+    <div class="brand-wrap">
+      <div class="brand-main">Egzamin Wędkarza</div>
+      <div class="brand-sub">RAPR PZW Okr. Poznań – zasady wedkowania</div>
+    </div>
+    <div class="topbar-right">
+      <input id="searchInput" class="search" type="search" placeholder="Szukaj: np. sandacz, limity, odleglosci, kontrola">
+      <div id="resultInfo" class="result-info">Wszystkie dzialy widoczne</div>
+    </div>
+  </header>
+  <div class="reading-progress">
+    <div id="progressFill" class="reading-progress-fill"></div>
+  </div>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-logo-wrap">
+        <img src="logo.svg" alt="Logo PZW" class="sidebar-logo-img">
+      </div>
+      <h2>Spis dzialow</h2>
+      <nav>
+        <a href="#start">Start</a>
+        <a href="#p1">§1 Przepisy</a>
+        <a href="#p2">§2 Prawo do wedkowania</a>
+        <a href="#p3">§3 Obowiazki wedkujacego</a>
+        <a href="#p4">§4 Zasady wedkowania</a>
+        <a href="#p5">§5 Metody polowu</a>
+        <a href="#p6">§6 Ochrona ryb</a>
+        <a href="#p7">§7 Kontrola i odpowiedzialnosc</a>
+      </nav>
+
+      <div class="sidebar-note">
+        Material oparty na dokumencie RAPR PZW Okr. Poznan (08.10.2021).
+      </div>
+      <a class="pdf-link" href="rapr.pdf" target="_blank" rel="noopener noreferrer">Otworz oryginalny PDF</a>
+    </aside>
+
+    <main class="content">
+      <section id="start" class="lesson hero" data-keywords="start nauka rapr pzw poznan kurs regulamin egzamin">
+        <p class="eyebrow">Kurs przygotowawczy</p>
+        <h1>Egzamin<br>Wędkarza</h1>
+        <p class="lead">
+          Kompletny material do egzaminu wedkarskiego oparty na Regulaminie Amatorskiego Polowu Ryb PZW Okr. Poznan.
+          Wybierz dzial z lewej, czytaj i korzystaj z wyszukiwarki.
+        </p>
+
+        <div class="stat-grid">
+          <article class="stat-card"><strong>7</strong><span>paragrafow do opanowania</span></article>
+          <article class="stat-card"><strong>30+</strong><span>gatunkow w tabeli wymiarow</span></article>
+          <article class="stat-card"><strong>16</strong><span>okresow ochronnych</span></article>
+          <article class="stat-card"><strong>9</strong><span>podmiotow kontrolnych</span></article>
+        </div>
+
+        <div class="panel">
+          <h3>Jak czytac te strone</h3>
+          <ul>
+            <li>Najpierw prawo i obowiazki (§2-§3), potem zakazy i metody (§4-§5), na koncu ochrona i kontrola (§6-§7).</li>
+            <li>Wyszukiwarka filtruje sekcje na zywo, wiec szybko znajdziesz konkretny gatunek lub przepis.</li>
+            <li>Przed lowieniem zawsze sprawdz aktualnosc zezwolenia i pelnego PDF.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="p1" class="lesson" data-keywords="paragraf 1 przepisy ustawy rozporzadzenia kodeks regulamin">
+        <h2>§1. Przepisy regulujace zachowanie wedkarza nad woda</h2>
+        <p>Regulamin odwoluje sie do prawa powszechnego i wewnetrznych zasad PZW. Najwazniejsze akty:</p>
+        <ol>
+          <li>Ustawa o rybactwie srodladowym.</li>
+          <li>Ustawa o zegludze srodladowej.</li>
+          <li>Ustawa o ochronie przyrody.</li>
+          <li>Ustawa o lasach.</li>
+          <li>Ustawa o ochronie zwierzat.</li>
+          <li>Prawo wodne.</li>
+          <li>Kodeks wykroczen.</li>
+          <li>Kodeks karny.</li>
+          <li>Ustawa o rejestracji jachtow i innych jednostek do 24 m.</li>
+          <li>Ustawa o bezpieczenstwie osob przebywajacych na obszarach wodnych.</li>
+          <li>Rozporzadzenie ws. ochrony gatunkowej zwierzat.</li>
+          <li>Rozporzadzenie ws. polowu ryb i warunkow chowu/hodowli.</li>
+          <li>RAPR PZW (wersja ogolna).</li>
+          <li>Uchwala Zarzadu Okregu PZW w Poznaniu.</li>
+        </ol>
+        <p class="note">Jesli czegos nie ma w skrocie, stosuje sie przepisy ustawowe i zasady etyki wedkarskiej.</p>
+      </section>
+
+      <section id="p2" class="lesson" data-keywords="paragraf 2 prawo do wedkowania karta zezwolenie mlodziez dzieci zawody">
+        <h2>§2. Prawo do wedkowania</h2>
+        <div class="panel">
+          <h3>Podstawowe zasady</h3>
+          <ul>
+            <li>Na wodach PZW Poznan potrzebne sa: karta wedkarska i zezwolenie.</li>
+            <li>Pierwszenstwo stanowiska ma osoba, ktora byla tam wczesniej.</li>
+            <li>Zezwolenie moze byc papierowe albo elektroniczne.</li>
+            <li>Zwolnienie z karty: osoby do 14 lat i cudzoziemcy czasowo przebywajacy w Polsce.</li>
+            <li>Samodzielnie wolno lowic od 14 lat; do 16 lat brak nocnego lowienia bez opiekuna.</li>
+          </ul>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Grupa</th>
+                <th>Najwazniejsze ograniczenia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Czlonek PZW do 14 lat</td><td>Pod opieka doroslego, bez zywej/martwej rybki, z limitem i wymiarami ochronnymi.</td></tr>
+              <tr><td>Czlonek PZW do 7 lat</td><td>Dodatkowo ograniczenie do jednej wedki.</td></tr>
+              <tr><td>Niezrzeszony do 14 lat</td><td>Wylacznie pod opieka doroslego z karta i zezwoleniem, w ramach limitu opiekuna.</td></tr>
+              <tr><td>Niezrzeszony do 7 lat</td><td>Ograniczenie do jednej wedki.</td></tr>
+              <tr><td>Dwie osoby do 14 lat pod opieka</td><td>Mozliwe jednoczesnie po jednej wedce (splawik-grunt), z wyjatkami dla wod pstraga/lipienia.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h3>Zawody wedkarskie</h3>
+          <ul>
+            <li>Zawody prowadzi sie wg regulaminu organizatora i zasad sportu wedkarskiego.</li>
+            <li>W zawodach na zywej rybie dobowe limity nie obowiazuja (poza wegorzem).</li>
+            <li>Zabrania sie organizacji zawodow na bitej rybie.</li>
+            <li>Odstepstwa od limitow tylko po pisemnej zgodzie opiekuna wody lub Okregu.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="p3" class="lesson" data-keywords="paragraf 3 obowiazki dokumenty porzadek rejestr odleglosci ryba oznakowana">
+        <h2>§3. Obowiazki wedkujacego</h2>
+        <ul>
+          <li>Podczas lowienia miej przy sobie: karte, zezwolenie i inne wymagane dokumenty.</li>
+          <li>Przestrzegaj zasad i dodatkowych ograniczen wpisanych w zezwoleniu.</li>
+          <li>Utrzymuj porzadek na brzegu w promieniu 5 m od stanowiska.</li>
+          <li>Prowadz stale i bezposrednie nadzorowanie wedek.</li>
+          <li>Prowadz rejestr amatorskiego polowu, jesli wymagany.</li>
+          <li>Opusc lowisko na czas zawodow, odlowow kontrolnych lub zarybiania.</li>
+          <li>Dbaj o bezpieczenstwo swoje i innych osob nad woda.</li>
+          <li>Przy rybie oznakowanej przeslij znacznik i dane polowu do PZW/IRS.</li>
+          <li>Nie utrudniaj lowienia innym osobom.</li>
+        </ul>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Typ lowienia</th>
+                <th>Minimalna odleglosc od osoby, ktora byla pierwsza</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Polow z lodzi</td><td>50 m</td></tr>
+              <tr><td>Brzeg: spinning lub mucha</td><td>25 m</td></tr>
+              <tr><td>Brzeg: splawikowo-gruntowa</td><td>10 m</td></tr>
+              <tr><td>Pod lodem</td><td>10 m</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="p4" class="lesson" data-keywords="paragraf 4 zasady wedkowania wedka przynety zakazy lowisko lodz no kill zywca martwa rybka">
+        <h2>§4. Zasady wedkowania</h2>
+
+        <div class="panel">
+          <h3>1) Wedka i podstawowe parametry</h3>
+          <ul>
+            <li>Wedzisko min. 30 cm.</li>
+            <li>Zestaw z jednym haczykiem z przyneta albo dopuszczonym zestawem sztucznym.</li>
+            <li>W wersjach sztucznych obowiazuja limity liczby haczykow i ostrzy.</li>
+            <li>Pod lodem obowiazuja bardziej restrykcyjne limity (np. obwod 20 mm).</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>2) Przynety</h3>
+          <ul>
+            <li>Dozwolone: naturalne (zwierzece, roslinne) i sztuczne.</li>
+            <li>Zakaz: gatunki chronione, ikra, ryby nie z danego lowiska, oraz czesc gatunkow inwazyjnych.</li>
+            <li>Przynety sztuczne: max dwa haczyki, rozstaw ostrzy nie wiekszy niz szerokosc przynety.</li>
+          </ul>
+        </div>
+
+        <div class="panel warning">
+          <h3>3) Najwazniejsze zakazy ogolne</h3>
+          <ul>
+            <li>Zakaz lowienia blizej niz 50 m od budowli pietrzacych i od narzedzi uprawnionego do rybactwa.</li>
+            <li>Zakaz lowienia wiecej niz dwiema wedkami (lososiowate i lipien: jedna wedka).</li>
+            <li>Zakaz lowienia blizej niz 75 m od znaku polowu kusza.</li>
+            <li>Zakaz metody szarpaka i metody na zrywke przywiazywanej do trwalych elementow brzegu.</li>
+            <li>Zakaz lowienia na dwoch stanowiskach jednoczesnie.</li>
+            <li>Zakaz wywozenia zanet/przynet na odleglosc ponad 50 m.</li>
+            <li>Zakaz sztucznego swiatla do lokalizacji i wabienia ryb.</li>
+            <li>Zakaz pozyskiwania ryb w okresie ochronnym, w wymiarze ochronnym i ponad limit.</li>
+            <li>Zakaz handlu rybami z amatorskiego polowu.</li>
+            <li>Zakaz obcinania glow rybom przed zakonczeniem wedkowania.</li>
+            <li>Zakaz patroszenia/skrobania ryb na lowisku (poza filetowaniem przynet).</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>4) Traktowanie i przechowywanie ryb</h3>
+          <ul>
+            <li>Rybe zlowiona niezgodnie z przepisami wypusc niezwlocznie do tego samego lowiska.</li>
+            <li>Kazda ryba wymaga humanitarnego traktowania i humanitarnego usmiercania.</li>
+            <li>Miej przyrzad do odhaczania; nie wolno wyrywac haka z trzewi ryby.</li>
+            <li>W siatce trzymaj tylko do dobowego limitu i max 24h.</li>
+            <li>Lososiowate, lipienie i ryby spod lodu do zabrania usmiercaj od razu.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>5) Zywa/martwa rybka lub jej czesci</h3>
+          <ul>
+            <li>Przyneta rybna musi pochodzic z tego samego lowiska i byc legalna.</li>
+            <li>Zakaz ryb kupionych i ryb z innych akwenow.</li>
+            <li>Dopuszczalne pozyskiwanie przynety podrywka max 1x1 m, oczko min 5 mm.</li>
+            <li>Zakaz spinningu i trollingu na przynety naturalne.</li>
+            <li>Zakaz stosowania zywej/martwej rybki od 01.01 do 30.04.</li>
+            <li>Na lowiskach no-kill zakaz zywej/martwej rybki i jej czesci.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>6) Wedkowanie z lodzi i na wodach gorskich</h3>
+          <ul>
+            <li>Od 01.01 do 31.05: wedkowanie z lodzi tylko od switu do zmierzchu.</li>
+            <li>Jednostki plywajace podlegaja zasadom oznakowania/rejestracji wg przepisow.</li>
+            <li>Na wodach krainy pstraga i lipienia: zakaz nocnego lowienia i tylko jedna wedka.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="p5" class="lesson" data-keywords="paragraf 5 metody polowu splawik spinning trolling mucha podlodowe zrywka">
+        <h2>§5. Dozwolone metody polowu</h2>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <h3>Metoda splawikowo-gruntowa</h3>
+            <p>Do 2 wedek, na kazdej jeden haczyk z przyneta naturalna.</p>
+            <p class="method-ban">Zakaz stosowania przynet sztucznych.</p>
+          </article>
+
+          <article class="method-card">
+            <h3>Metoda spinningowa</h3>
+            <p>1 wedka trzymana w reku, jedna sztuczna przyneta, limity haczykow i ostrzy.</p>
+            <p class="method-ban">Zakaz wywozu przynet (RC, dron itp.) i zakaz przynet naturalnych.</p>
+          </article>
+
+          <article class="method-card">
+            <h3>Metoda trollingowa</h3>
+            <p>1 wedka, jedna sztuczna przyneta holowana za jednostka plywajaca.</p>
+            <p class="method-ban">Zakaz przynet naturalnych i zakaz trollingu od 01.01 do 31.05.</p>
+          </article>
+
+          <article class="method-card">
+            <h3>Metoda muchowa</h3>
+            <p>1 wedka, sznur muchowy, limity haczykow/ostrzy; bez dodatkowego obciazenia zewnetrznego.</p>
+            <p class="method-ban">Zakaz kuli wodnej i podobnych rozwiazan.</p>
+          </article>
+
+          <article class="method-card">
+            <h3>Metody podlodowe</h3>
+            <p>Na sztuczna przynete (inna niz mormyszka): 1 wedka. Na naturalna i/lub mormyszke: 2 wedki.</p>
+            <p class="method-ban">Zakaz zywej/martwej rybki, zakaz nocnego polowu z lodu.</p>
+          </article>
+
+          <article class="method-card">
+            <h3>Metoda na zrywke/podwodny splawik</h3>
+            <p>Odmiana splawikowo-gruntowej, z dodatkowa linka i boja/specjalnym ciezarkiem.</p>
+            <p class="method-ban">Zakaz przywiazywania zestawu do drzewa/trzciny i zakaz przegradzania rzeki.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="p6" class="lesson" data-keywords="paragraf 6 ochrona ryb wymiary okresy limity inwazyjne ochrona calkowita">
+        <h2>§6. Ochrona ryb</h2>
+
+        <div class="panel">
+          <h3>Wymiary ochronne (wody PZW Poznan)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Gatunek</th>
+                  <th>Wymiar ochronny</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Amur bialy*</td><td>60 cm*</td></tr>
+                <tr><td>Bolen</td><td>40 cm</td></tr>
+                <tr><td>Brzanka</td><td>20 cm</td></tr>
+                <tr><td>Brzana</td><td>40 cm</td></tr>
+                <tr><td>Brzana karpacka</td><td>20 cm</td></tr>
+                <tr><td>Certa</td><td>30 cm</td></tr>
+                <tr><td>Glowacica</td><td>70 cm</td></tr>
+                <tr><td>Jaz</td><td>30 cm</td></tr>
+                <tr><td>Jelec</td><td>15 cm</td></tr>
+                <tr><td>Karp</td><td>40 cm</td></tr>
+                <tr><td>Klen</td><td>30 cm</td></tr>
+                <tr><td>Lin</td><td>35 cm</td></tr>
+                <tr><td>Lipien</td><td>30 cm</td></tr>
+                <tr><td>Losos</td><td>50 cm</td></tr>
+                <tr><td>Mietus</td><td>30 cm</td></tr>
+                <tr><td>Okon</td><td>20 cm</td></tr>
+                <tr><td>Pstrag potokowy</td><td>30 cm</td></tr>
+                <tr><td>Rozpior</td><td>25 cm</td></tr>
+                <tr><td>Sandacz</td><td>50 cm</td></tr>
+                <tr><td>Sapa</td><td>25 cm</td></tr>
+                <tr><td>Sieja</td><td>35 cm</td></tr>
+                <tr><td>Sielawa</td><td>18 cm</td></tr>
+                <tr><td>Sum</td><td>70 cm</td></tr>
+                <tr><td>Szczupak</td><td>50 cm</td></tr>
+                <tr><td>Swinka</td><td>25 cm</td></tr>
+                <tr><td>Troc</td><td>50 cm</td></tr>
+                <tr><td>Troc jeziorowa</td><td>50 cm</td></tr>
+                <tr><td>Wegorz</td><td>60 cm</td></tr>
+                <tr><td>Wzdraga</td><td>15 cm</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">*Wyjatek dla amura bialego zgodnie z regulaminem (obwody rybackie).</p>
+        </div>
+
+        <div class="panel">
+          <h3>Okresy ochronne (wody PZW Poznan)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Gatunek</th>
+                  <th>Okres ochronny</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Bolen</td><td>01.01 - 30.04</td></tr>
+                <tr><td>Brzana</td><td>01.01 - 30.06</td></tr>
+                <tr><td>Certa</td><td>01.01 - 30.06</td></tr>
+                <tr><td>Glowacica</td><td>01.03 - 31.05</td></tr>
+                <tr><td>Losos</td><td>01.10 - 31.12</td></tr>
+                <tr><td>Mietus</td><td>01.12 - koniec lutego</td></tr>
+                <tr><td>Pstrag potokowy</td><td>01.09 - 31.12</td></tr>
+                <tr><td>Sandacz</td><td>01.01 - 31.05</td></tr>
+                <tr><td>Sapa</td><td>01.04 - 31.05</td></tr>
+                <tr><td>Sieja</td><td>15.10 - 31.12</td></tr>
+                <tr><td>Sielawa</td><td>15.10 - 31.12</td></tr>
+                <tr><td>Sum</td><td>01.01 - 31.05</td></tr>
+                <tr><td>Szczupak</td><td>01.01 - 30.04</td></tr>
+                <tr><td>Swinka</td><td>01.01 - 15.05</td></tr>
+                <tr><td>Troc</td><td>01.10 - 31.12</td></tr>
+                <tr><td>Troc jeziorowa</td><td>01.09 - 31.01</td></tr>
+                <tr><td>Wegorz</td><td>01.12 - 31.03</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Jesli poczatek/koniec okresu wypada w dzien ustawowo wolny, stosuje sie zasady skrocenia okresu (z wyjatkiem wegorza).</p>
+        </div>
+
+        <div class="panel">
+          <h3>Limity ilosciowe</h3>
+          <ul>
+            <li>W siatce nie wolno przechowywac wiecej niz dobowy limit.</li>
+            <li>Przechowywanie ryb w siatce: maks. 24 godziny.</li>
+            <li>Limit tygodniowy: glowacica 1 szt. (poniedzialek-niedziela).</li>
+          </ul>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Gatunek</th>
+                  <th>Limit dobowy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Amur bialy*</td><td>2 szt.</td></tr>
+                <tr><td>Bolen</td><td>2 szt.</td></tr>
+                <tr><td>Brzana</td><td>2 szt.</td></tr>
+                <tr><td>Certa + Swinka lacznie</td><td>5 szt.</td></tr>
+                <tr><td>Klen + Jaz lacznie</td><td>5 szt.</td></tr>
+                <tr><td>Karp</td><td>2 szt.</td></tr>
+                <tr><td>Lin</td><td>3 szt.</td></tr>
+                <tr><td>Losos + Troc + Troc jeziorowa lacznie</td><td>2 szt.</td></tr>
+                <tr><td>Okon</td><td>10 szt.</td></tr>
+                <tr><td>Pstrag potokowy + Lipien lacznie</td><td>3 szt.</td></tr>
+                <tr><td>Sandacz + Szczupak lacznie</td><td>2 szt.</td></tr>
+                <tr><td>Sieja</td><td>2 szt.</td></tr>
+                <tr><td>Sum (Warta i doplywy)</td><td>2 szt.</td></tr>
+                <tr><td>Sum (pozostale wody)</td><td>bez limitu</td></tr>
+                <tr><td>Wegorz</td><td>2 szt.</td></tr>
+                <tr><td>Pozostale gatunki</td><td>bez limitu</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">*Wyjatek limitu amura zgodnie z regulaminem (obwody rybackie).</p>
+        </div>
+
+        <div class="panel warning">
+          <h3>Gatunki inwazyjne i ochrona calkowita</h3>
+          <p>Po zlowieniu nie wypuszczaj z powrotem m.in.: raka pregowanego, raka sygnalowego, trawianki, czebaczka amurskiego, sumika karlowatego oraz innych obcych gatunkow inwazyjnych.</p>
+          <p>Gatunki ryb objete calkowita ochrona (wg dokumentu):</p>
+          <ul>
+            <li>Jesiotr ostronosy.</li>
+            <li>Koza zlotawa.</li>
+            <li>Strzebla blotna.</li>
+            <li>Glowacica (osobniki wystepujace w dorzeczu Dunaju).</li>
+            <li>Minog morski.</li>
+            <li>Aloza.</li>
+            <li>Parposz.</li>
+            <li>Sliz pospolity.</li>
+            <li>Koza dunajska.</li>
+            <li>Koza pospolita.</li>
+            <li>Piskorz.</li>
+            <li>Piekielnica.</li>
+            <li>Brzanka (Barbus peloponnesius).</li>
+            <li>Ciosa (osobniki poza populacja Zalewu Wislanego).</li>
+            <li>Rozanka.</li>
+            <li>Kielb bialopletwy.</li>
+            <li>Kielb Kesslera.</li>
+            <li>Pocierniec.</li>
+            <li>Babka czarna.</li>
+            <li>Babka czarnoplamka.</li>
+            <li>Babka piaskowa.</li>
+            <li>Babka mala.</li>
+            <li>Tasmiak dlugi.</li>
+            <li>Wezynka.</li>
+            <li>Iglicznia.</li>
+            <li>Glowacz bialopletwy.</li>
+            <li>Glowacz pregopletwy.</li>
+            <li>Kur rogacz.</li>
+            <li>Dennik.</li>
+            <li>Minog ukrainski.</li>
+            <li>Minog rzeczny.</li>
+            <li>Minog strumieniowy.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="p7" class="lesson" data-keywords="paragraf 7 kontrola odpowiedzialnosc policja psr ssr straz lesna miejska graniczna">
+        <h2>§7. Kontrola i odpowiedzialnosc wedkujacych</h2>
+
+        <div class="panel">
+          <h3>Kto moze kontrolowac</h3>
+          <ul>
+            <li>Policja.</li>
+            <li>Panstwowa Straz Rybacka.</li>
+            <li>Spoleczna Straz Rybacka.</li>
+            <li>Straz Lesna.</li>
+            <li>Straz Miejska/Gminna.</li>
+            <li>Straz Graniczna.</li>
+            <li>Uprawniony do rybactwa na uzytkowanych wodach.</li>
+            <li>Straz Ochrony Mienia PZW.</li>
+            <li>Inne podmioty uprawnione ustawowo.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Obowiazki podczas kontroli</h3>
+          <ul>
+            <li>Okaz dokumenty uprawniajace do polowu.</li>
+            <li>Pokaz sprzet, przynety i zlowione ryby.</li>
+            <li>Na zadanie wyciagnij zestaw z wody do kontroli.</li>
+          </ul>
+        </div>
+
+        <div class="panel warning">
+          <h3>Konsekwencje naruszen</h3>
+          <p>
+            Naruszenie regulaminu i zasad zezwolenia powoduje konsekwencje wynikajace z ustaw,
+            a dla czlonkow PZW dodatkowo konsekwencje statutowe.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Szybka checklista przed lowieniem</h3>
+          <ul>
+            <li>Dokumenty: karta i zezwolenie.</li>
+            <li>Metoda i przyneta: legalna dla akwenu i pory roku.</li>
+            <li>Gatunek: sprawdzony wymiar, okres i limit.</li>
+            <li>Rejestr i porzadek na stanowisku.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
